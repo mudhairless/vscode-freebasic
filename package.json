@@ -1,0 +1,25 @@
+{
+    "name": "lang-freebasic",
+    "displayName": "lang-freebasic",
+    "description": "Provides FreeBASIC syntax coloring",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.35.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "freebasic",
+            "aliases": ["FreeBASIC", "freebasic"],
+            "extensions": [".bas",".bi"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "freebasic",
+            "scopeName": "source.freebasic",
+            "path": "./syntaxes/freebasic.tmLanguage.json"
+        }]
+    }
+}
