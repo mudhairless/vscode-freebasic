@@ -34,49 +34,49 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.freebasic",
-				"match": "\\b(operator|with|data|declare|to|enum|asm|append|byref|byval|union|elseif|extern|select|case|iif|if|dim|else|as|type|class|function|sub|property|constructor|destructor|then|do|loop|end|while|wend|for|return|next|step|continue)\\b"
+				"match": "(?i)\\b(operator|with|data|declare|to|enum|asm|append|byref|byval|union|elseif|extern|select|case|iif|if|dim|else|as|type|class|function|sub|property|constructor|destructor|then|do|loop|end|while|wend|for|return|next|step|continue)\\b"
 			}]
 		},
 		"numeric": {
 			"patterns": [{
 				"name": "constant.numeric",
-				"match": "\\b(\\d+\\.?\\d+)|(\\d)\\b"
+				"match": "(?i)\\b(\\d+\\.?\\d+)|(\\d)\\b"
 			}]
 		},
 		"intrinsics": {
 			"patterns": [{
 				"name": "constant.language.freebasic",
-				"match": "\\b(__DATE__|__DATE_ISO__|__FB_64BIT__|__FB_ARGC__|__FB_ARGV__|__FB_ARM__|__FB_ASM__|__FB_BACKEND__|__FB_BIGENDIAN__|__FB_BUILD_DATE__|__FB_CYGWIN__|__FB_DARWIN__|__FB_DEBUG__|__FB_DOS__|__FB_ERR__|__FB_FPMODE__|__FB_FPU__|__FB_FREEBSD__|__FB_GCC__|__FB_GUI__|__FB_LANG__|__FB_LINUX__|__FB_MAIN__|__FB_MIN_VERSION__|__FB_MT__|__FB_NETBSD__|__FB_OPENBSD__|__FB_OUT_DLL__|__FB_OUT_EXE__|__FB_OUT_LIB__|__FB_OUT_OBJ__|__FB_PCOS__|__FB_SIGNATURE__|__FB_SSE__|__FB_UNIX__|__FB_VECTORIZE__|__FB_VER_MAJOR__|__FB_VER_MINOR__|__FB_VER_PATCH__|__FB_VERSION__|__FB_WIN32__|__FB_XBOX__|__FILE__|__FILE_NQ__|__FUNCTION__|__FUNCTION_NQ__|__LINE__|__PATH__|__TIME__)\\b"
+				"match": "(?i)\\b(__DATE__|__DATE_ISO__|__FB_64BIT__|__FB_ARGC__|__FB_ARGV__|__FB_ARM__|__FB_ASM__|__FB_BACKEND__|__FB_BIGENDIAN__|__FB_BUILD_DATE__|__FB_CYGWIN__|__FB_DARWIN__|__FB_DEBUG__|__FB_DOS__|__FB_ERR__|__FB_FPMODE__|__FB_FPU__|__FB_FREEBSD__|__FB_GCC__|__FB_GUI__|__FB_LANG__|__FB_LINUX__|__FB_MAIN__|__FB_MIN_VERSION__|__FB_MT__|__FB_NETBSD__|__FB_OPENBSD__|__FB_OUT_DLL__|__FB_OUT_EXE__|__FB_OUT_LIB__|__FB_OUT_OBJ__|__FB_PCOS__|__FB_SIGNATURE__|__FB_SSE__|__FB_UNIX__|__FB_VECTORIZE__|__FB_VER_MAJOR__|__FB_VER_MINOR__|__FB_VER_PATCH__|__FB_VERSION__|__FB_WIN32__|__FB_XBOX__|__FILE__|__FILE_NQ__|__FUNCTION__|__FUNCTION_NQ__|__LINE__|__PATH__|__TIME__)\\b"
 			}]
 		},
 		"preprocessor": {
 			"patterns": [{
 				"name": "keyword.other.freebasic",
-				"match": "\\b(#DEFINE|#ELSE|#ELSEIF|#ENDIF|#ENDMACRO|#ERROR|#IF|#IFDEF|#IFNDEF|#INCLIB|#INCLUDE|#LANG|#LIBPATH|#LINE|#MACRO|#PRAGMA|#PRINT|#UNDEF)\\b"
+				"match": "(?i)\\b(#DEFINE|#ELSE|#ELSEIF|#ENDIF|#ENDMACRO|#ERROR|#IF|#IFDEF|#IFNDEF|#INCLIB|#INCLUDE|#LANG|#LIBPATH|#LINE|#MACRO|#PRAGMA|#PRINT|#UNDEF)\\b"
 			}]
 		},
 		"stdlib": {
 			"patterns": [{
 				"name": "support.function.freebasic",
-				"match": "\\b(\\?|delete|abs|acos|allocate|asc|asin|assert|assertwarn|atan2|atn|beep|bin|bit|bitreset|bitset|bload|bsave|call|callocate|cast|cbool|cbyte|cdbl|chain|chdir|chr|cint|circle|clear|clng|clngint|close|cls|color|command|cos|cptr|cshort|csign|csng|csrlin|cubyte|cuint|culng|culngint|cunsg|curdir|cushort|cvd|cvi|cvl|cvlongint|cvs|cvshort|date|dateadd|datediff|datepart|dateserial|datevalue|day|deallocate|dir|draw|dylibfree|dylibload|dylibsymbol|environ|eof|erase|erfn|erl|ermn|err|error|exec|exepath|exit|exp|fileattr|filecopy|filedatetime|fileexists|filelen|fix|flip|format|frac|fre|freefile|get|getjoystick|getkey|getmouse|hex|hibyte|hiword|hour|imageconvertrow|imagecreate|imagedestroy|imageinfo|inkey|inp|input|instr|instrrev|int|isdate|isredirected|kill|lbound|lcase|left|len|line|lobyte|loc|local|locate|lock|lof|log|loword|lpos|lprint|lset|ltrim|mid|minute|mkd|mkdir|mki|mkl|mklongint|mks|mkshort|month|monthname|multikey|mutexcreate|mutexdestroy|mutexlock|mutexunlock|name|new|now|oct|offsetof|open|out|output|paint|palette|pcopy|peek|pmap|point|pointcoord|poke|pos|preset|print|pset|put|random|randomize|read|reallocate|reset|restore|return|rgb|rgba|right|rmdir|rnd|rset|rtrim|run|sadd|screen|screencopy|screencontrol|screenevent|screenglproc|screeninfo|screenlist|screenlock|screenptr|screenres|screenset|screensync|screenunlock|second|seek|setdate|setenviron|setmouse|settime|sgn|shell|sin|sizeof|sleep|space|spc|sqr|stick|str|strig|swap|system|tab|tan|threadcall|threadcreate|threaddetach|threadwait|time|timer|timeserial|timevalue|trim|typeof|ubound|ucase|unlock|varptr|view|wait|wbin|wchr|weekday|weekdayname|whex|width|window|windowtitle|winput|woct|write|wspace|wstr|year)\\b"
+				"match": "(?i)\\b(\\?|delete|abs|acos|allocate|asc|asin|assert|assertwarn|atan2|atn|beep|bin|bit|bitreset|bitset|bload|bsave|call|callocate|cast|cbool|cbyte|cdbl|chain|chdir|chr|cint|circle|clear|clng|clngint|close|cls|color|command|cos|cptr|cshort|csign|csng|csrlin|cubyte|cuint|culng|culngint|cunsg|curdir|cushort|cvd|cvi|cvl|cvlongint|cvs|cvshort|date|dateadd|datediff|datepart|dateserial|datevalue|day|deallocate|dir|draw|dylibfree|dylibload|dylibsymbol|environ|eof|erase|erfn|erl|ermn|err|error|exec|exepath|exit|exp|fileattr|filecopy|filedatetime|fileexists|filelen|fix|flip|format|frac|fre|freefile|get|getjoystick|getkey|getmouse|hex|hibyte|hiword|hour|imageconvertrow|imagecreate|imagedestroy|imageinfo|inkey|inp|input|instr|instrrev|int|isdate|isredirected|kill|lbound|lcase|left|len|line|lobyte|loc|local|locate|lock|lof|log|loword|lpos|lprint|lset|ltrim|mid|minute|mkd|mkdir|mki|mkl|mklongint|mks|mkshort|month|monthname|multikey|mutexcreate|mutexdestroy|mutexlock|mutexunlock|name|new|now|oct|offsetof|open|out|output|paint|palette|pcopy|peek|pmap|point|pointcoord|poke|pos|preset|print|pset|put|random|randomize|read|reallocate|reset|restore|return|rgb|rgba|right|rmdir|rnd|rset|rtrim|run|sadd|screen|screencopy|screencontrol|screenevent|screenglproc|screeninfo|screenlist|screenlock|screenptr|screenres|screenset|screensync|screenunlock|second|seek|setdate|setenviron|setmouse|settime|sgn|shell|sin|sizeof|sleep|space|spc|sqr|stick|str|strig|swap|system|tab|tan|threadcall|threadcreate|threaddetach|threadwait|time|timer|timeserial|timevalue|trim|typeof|ubound|ucase|unlock|varptr|view|wait|wbin|wchr|weekday|weekdayname|whex|width|window|windowtitle|winput|woct|write|wspace|wstr|year)\\b"
 			}]
 		},
 		"operators": {
 			"patterns": [{
 				"name": "keyword.operator.freebasic",
-				"match": "\\b(and|or|mod|shl|shr|eqv|imp|not|xor|andalso|orelse|is|strptr)\\b"
+				"match": "(?i)\\b(and|or|mod|shl|shr|eqv|imp|not|xor|andalso|orelse|is|strptr)\\b"
 			}]
 		},
 		"types": {
 			"patterns": [{
 				"name": "support.type.freebasic",
-				"match": "\\b(any|byte|ubyte|short|ushort|long|ulong|integer|uinteger|longint|ulongint|single|double|boolean|string|zstring|wstring)\\b"
+				"match": "(?i)\\b(any|byte|ubyte|short|ushort|long|ulong|integer|uinteger|longint|ulongint|single|double|boolean|string|zstring|wstring)\\b"
 			}]
 		},
 		"typemods": {
 			"patterns": [{
 				"name": "storage.modifier.freebasic",
-				"match": "\\b(public|overload|override|private|static|const|unsigned|pointer|ptr|shared|common|abstract|virtual|alias)\\b"
+				"match": "(?i)\\b(public|overload|override|private|static|const|unsigned|pointer|ptr|shared|common|abstract|virtual|alias)\\b"
 			}]
 		},
 		"strings": {
