@@ -28,6 +28,9 @@
 		},
 		{
 			"include": "#intrinsics"
+		},
+		{
+			"include": "#comments"
 		}
 	],
 	"repository": {
@@ -87,6 +90,20 @@
 				{
 					"name": "constant.character.escape.freebasic",
 					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.freebasic",
+					"begin": "'",
+					"end": "\n"
+				},
+				{
+					"name": "comment.block.freebasic",
+					"begin": "\/'",
+					"end": "'\/"
 				}
 			]
 		}
