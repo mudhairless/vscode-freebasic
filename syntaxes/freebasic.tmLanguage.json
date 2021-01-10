@@ -82,14 +82,35 @@
 				"match": "(?i)\\b(public|overload|override|private|static|const|unsigned|pointer|ptr|shared|common|abstract|virtual|alias)\\b"
 			}]
 		},
-		"strings": {
-			"name": "string.quoted.double.freebasic",
-			"begin": "\"",
-			"end": "\"",
+		"string_escaped_char": {
 			"patterns": [
 				{
-					"name": "constant.character.escape.freebasic",
-					"match": "\\\\."
+					"match": "\\\\([\"\\abflnrtv']|[0-9]{1,3}|&h[0-9a-fA-Z]{1,2}|&o[0-7]{1,3}|&b[01]{1,8}|u[0-9a-fA-Z]{1,4})",
+					"name": "constant.character.escape.freebasic"
+				}
+			]
+		},
+		"strings": {
+			"patterns": [
+				{
+					"name": "string.quoted.double.freebasic",
+					"begin": "\"",
+					"end": "\"|\n"
+				},
+				{
+					"name": "string.quoted.double_escapes_off.freebasic",
+					"begin": "\\$\"",
+					"end": "\"|\n"
+				},
+				{
+					"name": "string.quoted.double_escapes_on.freebasic",
+					"begin": "!\"",
+					"end": "\"|\n",
+					"patterns": [
+						{
+							"include": "#string_escaped_char"
+						}
+					]
 				}
 			]
 		},
