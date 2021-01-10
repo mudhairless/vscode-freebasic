@@ -23,7 +23,7 @@ cat "$tmpdir/generated-all-keywords-from-fbc.txt" | \
 		-f "$tmpdir/generated-modifiers-filter-list.txt" \
 		> "$tmpdir/generated-keywords.txt"
 
-for i in keywords datatypes operators preprocessor modifiers; do
+for i in keywords preprocessor datatypes operators functions modifiers; do
 	echo
 	echo "$i:"
 	cat "$tmpdir/generated-$i.txt" | while read i; do printf "%s|" "$i"; done | sed 's/.$//'
