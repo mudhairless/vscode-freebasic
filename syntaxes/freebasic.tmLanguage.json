@@ -85,7 +85,7 @@
 		"string_escaped_char": {
 			"patterns": [
 				{
-					"match": "\\\\([\"\\abflnrtv']|[0-9]{1,3}|&h[0-9a-fA-Z]{1,2}|&o[0-7]{1,3}|&b[01]{1,8}|u[0-9a-fA-Z]{1,4})",
+					"match": "\\\\([\"\\\\abflnrtv']|[0-9]{1,3}|&h[0-9a-fA-Z]{1,2}|&o[0-7]{1,3}|&b[01]{1,8}|u[0-9a-fA-Z]{1,4})",
 					"name": "constant.character.escape.freebasic"
 				}
 			]
