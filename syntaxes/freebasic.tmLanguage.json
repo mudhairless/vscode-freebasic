@@ -37,7 +37,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.freebasic",
-				"match": "(?i)\\b(operator|with|data|declare|to|enum|asm|append|byref|byval|union|elseif|extern|select|case|iif|if|dim|else|as|type|class|function|sub|property|constructor|destructor|then|do|loop|end|while|wend|for|return|next|step|continue)\\b"
+				"match": "(?i)\\b(operator|with|data|declare|to|enum|asm|append|byref|byval|union|elseif|extern|select|case|iif|if|dim|var|else|as|type|class|function|sub|property|constructor|destructor|then|do|loop|end|while|wend|for|return|next|step|continue|namespace|using)\\b"
 			}]
 		},
 		"numeric": {
