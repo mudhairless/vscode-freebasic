@@ -43,7 +43,7 @@
 		"numeric": {
 			"patterns": [{
 				"name": "constant.numeric",
-				"match": "(?i)\\b(\\d+\\.?\\d+)|(\\d)\\b"
+				"match": "(?i)\\b(\\d+\\.?\\d*([EeDd][+|-]?[0-9]*)?)|(&[Bb][01]+)|(&[Oo][0-7]+)|(&[Hh][0-9a-fA-F]+)\\b"
 			}]
 		},
 		"intrinsics": {
