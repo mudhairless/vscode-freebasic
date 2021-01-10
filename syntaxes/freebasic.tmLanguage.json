@@ -55,7 +55,7 @@
 		"preprocessor": {
 			"patterns": [{
 				"name": "keyword.other.freebasic",
-				"match": "(?i)\\b#(assert|define|dump|else|elseif|endif|endmacro|error|if|ifdef|ifndef|inclib|include|lang|libpath|line|macro|odump|pragma|print|undef)\\b"
+				"match": "(?i)^\\s*(\\#\\s*(assert|define|dump|else|elseif|endif|endmacro|error|if|ifdef|ifndef|inclib|include|lang|libpath|line|macro|odump|pragma|print|undef))\\b"
 			}]
 		},
 		"stdlib": {
