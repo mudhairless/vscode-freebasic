@@ -37,7 +37,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.freebasic",
-				"match": "(?i)\\b(operator|with|data|declare|to|enum|asm|append|byref|byval|union|elseif|extern|select|case|iif|if|dim|var|else|as|type|class|function|sub|property|constructor|destructor|then|do|loop|end|while|wend|for|return|next|step|continue|namespace|using)\\b"
+				"match": "(?i)\\b(any|as|asm|base|byref|byval|case|class|common|constructor|continue|data|declare|defbyte|defdbl|defined|defint|deflng|deflongint|defshort|defsng|defstr|defubyte|defuint|defulng|defulongint|defushort|destructor|dim|do|dynamic|else|elseif|end|endif|enum|export|extends|extern|for|function|gosub|goto|if|implements|import|include|let|loop|namespace|next|on|operator|option|procptr|property|redim|rem|resume|scope|select|step|sub|then|to|type|union|until|using|var|wend|while|with)\\b"
 			}]
 		},
 		"numeric": {
@@ -55,7 +55,7 @@
 		"preprocessor": {
 			"patterns": [{
 				"name": "keyword.other.freebasic",
-				"match": "(?i)\\b(#DEFINE|#ELSE|#ELSEIF|#ENDIF|#ENDMACRO|#ERROR|#IF|#IFDEF|#IFNDEF|#INCLIB|#INCLUDE|#LANG|#LIBPATH|#LINE|#MACRO|#PRAGMA|#PRINT|#UNDEF)\\b"
+				"match": "(?i)\\b#(assert|define|dump|else|elseif|endif|endmacro|error|if|ifdef|ifndef|inclib|include|lang|libpath|line|macro|odump|pragma|print|undef)\\b"
 			}]
 		},
 		"stdlib": {
@@ -67,19 +67,19 @@
 		"operators": {
 			"patterns": [{
 				"name": "keyword.operator.freebasic",
-				"match": "(?i)\\b(and|or|mod|shl|shr|eqv|imp|not|xor|andalso|orelse|is|strptr)\\b"
+				"match": "(?i)\\b(and|andalso|eqv|imp|is|mod|not|or|orelse|shl|shr|strptr|xor)\\b"
 			}]
 		},
 		"types": {
 			"patterns": [{
 				"name": "support.type.freebasic",
-				"match": "(?i)\\b(any|byte|ubyte|short|ushort|long|ulong|integer|uinteger|longint|ulongint|single|double|boolean|string|zstring|wstring)\\b"
+				"match": "(?i)\\b(boolean|byte|double|integer|long|longint|pointer|ptr|short|single|string|ubyte|uinteger|ulong|ulongint|unsigned|ushort|wstring|zstring)\\b"
 			}]
 		},
 		"typemods": {
 			"patterns": [{
 				"name": "storage.modifier.freebasic",
-				"match": "(?i)\\b(public|overload|override|private|static|const|unsigned|pointer|ptr|shared|common|abstract|virtual|alias)\\b"
+				"match": "(?i)\\b(abstract|access|alias|append|binary|cdecl|const|encoding|explicit|field|lib|overload|override|pascal|preserve|private|protected|public|shared|static|stdcall|virtual)\\b"
 			}]
 		},
 		"string_escaped_char": {
