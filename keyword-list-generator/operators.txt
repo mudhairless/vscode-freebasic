@@ -1,0 +1,13 @@
+and
+andalso
+eqv
+imp
+is
+mod
+not
+or
+orelse
+shl
+shr
+strptr
+xor
