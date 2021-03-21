@@ -2,24 +2,39 @@
     "name": "lang-freebasic",
     "displayName": "lang-freebasic",
     "description": "Provides FreeBASIC syntax coloring",
-    "version": "0.0.1",
+    "version": "2.0.0",
     "engines": {
         "vscode": "^1.35.0"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mudhairless/vscode-freebasic"
+    },
+    "publisher": "me0698",
     "categories": [
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "freebasic",
-            "aliases": ["FreeBASIC", "freebasic"],
-            "extensions": [".bas",".bi"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "freebasic",
-            "scopeName": "source.freebasic",
-            "path": "./syntaxes/freebasic.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "freebasic",
+                "aliases": [
+                    "FreeBASIC",
+                    "freebasic"
+                ],
+                "extensions": [
+                    ".bas",
+                    ".bi"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "freebasic",
+                "scopeName": "source.freebasic",
+                "path": "./syntaxes/freebasic.tmLanguage.json"
+            }
+        ]
     }
 }
