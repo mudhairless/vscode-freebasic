@@ -1,3 +1,5 @@
+__fastcall
+__thiscall
 abstract
 access
 alias
